@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pune's dynamic Attire</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #010101;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        /* #special_img_1 {
+    background-image: url("https://nakshethnic.com/images/slider/01.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 80% 68%;
+    }
+
+    #special_img_2 {
+    background-image: url("https://www.pmc.gov.in/sites/default/files/IMG-20160309-WA0014.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 80% 68%;
+    } */
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="food.html">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="attire.html">Attire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="festivals.html">Festivals and Deities</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="differences.html">Behavioral differences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="About_Us.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex" id="attire_head">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase">
+                        <strong>Pune's dynamic Attire</strong>
+                    </h1>
+                    <hr>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <p class="mb-6">
+                        <strong>
+                            The occupation of the majority of people in Maharashtra is agriculture. People living on the
+                            Konkan
+                            Coast- the Konkanis are involved in fishing. Both of these activities require a lot of
+                            labour work.
+                            The people are to work hours in the sun and move around from one place to the other. Thus
+                            people
+                            preferred to wear what made them able to move around freely and feel comfortable.
+                        </strong>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Men and Women's Attire</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides borders">
+                <div class="numbertext">1 / 6</div>
+                <img src="https://m.media-amazon.com/images/I/516BY3CWz-L._UX569_.jpg"
+                    style="width:100%; height: 650px;">
+                <div class="text mb-sub">
+                    <strong>
+                        <div>Dhoti</div>
+                    </strong>
+                    <div>The men in Maharashtra usually we a dhoti. A dhoti is a single piece
+                        of cloth that is tucked around one's waist, and it covers the entire leg till the ankle.
+                        Dhotis are secured by making five tucks on each side, and then the loose ends are put in at
+                        the back. Dhotis are usually saffron or cream or white in colour. Dhotis are an unstitched
+                        piece of clothing that do not require any proper measurements as one could make it however
+                        tight or loose they wished it to be.Dhoti is suited for almost all seasons. The reason is that
+                        they
+                        are available in both silk and
+                        cotton fabrics. The silk varieties are embraced in the traditional customs and marriages, while
+                        the
+                        cotton ones are worn as daily wear.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="https://c8.alamy.com/comp/RPNEMX/a-portrait-of-a-marathimaharashtrian-bride-dressed-in-traditional-saree-RPNEMX.jpg"
+                    style="width:50%; height: 650px; margin-left: 25%">
+                <div class="text mb-sub">
+                    <strong>
+                        <div>Saree</div>
+                    </strong>
+                    <div>During the war times, just to showcase their calibre and to strengthen their physical
+                        capabilities, Marathi women invented this dhoti like saree draping style. The ancient Marathi
+                        women wanted to accompany their husbands and fathers to fight against foreign intruders.The
+                        saree is tucked in the
+                        middle giving it a similar look to the dhoti. The rest of the saree is wrapped around the
+                        upper body of the women. This type of saree is usually called Lugad. The most sought after
+                        Marathi saree is the "in vogue" Paithani silk saree (looks best in Pheswai style draping).
+                        Kholapuri silk saree is the most commonly worn saree in Marathi culture( looks best with dhoti
+                        drape, the contemporary one) and then there is Banarasi silk saree, the royal silk saree along
+                        with Uppada silk saree.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="https://www.utsavpedia.com/wp-content/uploads/2013/07/art-silk-and-velvet-turban-in-cream-and-maroon.jpg"
+                    style="width:50%; height: 650px; margin-left: 25%">
+                <div class="text mb-sub">
+                    <strong>
+                        <div>Pheta</div>
+                    </strong>
+                    <div>Pheta is the headdress Marathi men wear. It is a 'topi', or a head
+                        cover usually made up of cotton. Pheta, also known as pagris are small hats that are made to
+                        cover the heads so as to protect them from the direct sun rays falling on their heads.
+                        Travellers and people working outside, under the sun especially wear this. By preventing the
+                        direct sun rays, the individual does not feel drained or tired too quickly or easily.Other than
+                        the traditional white and Saffron encrusted Pheta, there are two major varieties available. One
+                        is the famous Kolhapuri Pheta, which comes in a multitude of colors and has a Bandhani effect on
+                        it. There are different styles of draping a Pheta that is determined by the nature of the place
+                        or the location and even famous personalities. For instance, if we take the example of places,
+                        there are styles like the Kolhapuri style, Mawali style, Puneri style, Lahiri style and many
+                        more.</div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="https://www.zerokaata.com/zerokaata-studio/wp-content/uploads/2018/07/m2-saree.jpg"
+                    style="width:50%; height: 650px; margin-left: 25%">
+                <div class="text mb-sub">
+                    <strong>
+                        <div>Choli</div>
+                    </strong>
+                    <div>The Maharashtrian women wear choli or blouse underneath the saree. It
+                        is the 'top' or shirt that they wear to cover their upper body. The choli covers half of the
+                        torso. the blouses are short, or half sleeved that have hooks in the front making it easier
+                        for the women to wear them. Similar to men's clothing, women's clothing is also made up of
+                        cotton and sometimes of silk. Because of this it can be worn in any season. The commonly found
+                        colours in Maharashtrian sarees are green and
+                        red and sometimes even Kesari (yellow) colour.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="https://img2.exportersindia.com/product_images/bc-full/2020/1/6915404/mens-dhoti-kurta-1579848639-5268032.jpeg"
+                    style="width:50%; height: 650px; margin-left: 25%">
+                <div class="text mb-sub">
+                    <strong>
+                        <div>Kurta</div>
+                    </strong>
+                    <div>Maharashtrian men usually wear cotton tops or Kurtas above their dhoti. The tops are made up of
+                        cotton so as to able the garment to absorb sweat since Maharashtra has a warm to a hot
+                        environment. These tops are thin and loose, generally white in colour.
+                        A number of modifications have been introduced these last few years to improve the look of the
+                        Kurta by literally transforming this garment to the way you would like it. You can have
+                        embroidery, buttons of different styles on a Kurta to make it look more graceful. You can remove
+                        the sleeves, reduce the length of the sleeves or even include a stand up collar to improve the
+                        appearance of the Kurta.A Kurta can also be used on a number of occasions. Sometimes it is
+                        classified as a wedding Kurta, Reception Kurta or even a party Kurta when it contains appealing
+                        embroidery work. The best Kurtas are commonly used as an outfit for everyday life as a simple
+                        version because of the comfort it provides to the wearer.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="http://blog.storymirror.com/public/uploads/featured-images/original/1278841498a36add2f752e90d4ca3da2.jpg"
+                    style="width:50%; height: 650px; margin-left: 25%">
+                <div class="text mb-sub">
+                    <strong>
+                        <div>Jewellery</div>
+                    </strong>
+                    <div>
+                        Jewelry has been a significant adornment for Indian women for ages. The tradition of adorning
+                        oneself with jewelry might be thousands of years old but has always remained in fashion till
+                        date. They are considered to be one of the supreme symbols of Femininity and very auspicious in
+                        Hindu Culture in India. Jewelry not only helps in enhancing one’s beauty but also symbolizes
+                        wealth, power, and status. For some, jewelry is also a form of art for self and creative
+                        expression.
+
+                        Women wear nath i.e. a nose piercing. Naths can be simple loops or loops connected with the
+                        earring on any one side. They are normally made up of gold. Women are also found wearing other
+                        gold jewellery like earrings and necklace (haar) with different coloured stones.Married women
+                        wear mangal sutra and also green bangles. The bride wears green bangles as they are said to
+                        bring prosperity to the relationship and family.
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <!-- 
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Men's Attire</h2>
+                    <hr class="my-4">
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <h3 class="mb-3"><strong>Dhoti</strong></h3>
+                        <p class="text-muted mb-0">The men in Maharashtra usually we a dhoti. A dhoti is a single piece
+                            of cloth that is tucked around one's waist, and it covers the entire leg till the ankle.
+                            Dhotis are secured by making five tucks on each side, and then the loose ends are put in at
+                            the back. Dhotis are usually saffron or cream or white in colour. Dhotis are an unstitched
+                            piece of clothing that do not require any proper measurements as one could make it however
+                            tight or loose they wished it to be.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <h3 class="mb-3"><strong>Pehta</strong></h3>
+                        <p class="text-muted mb-0">Pehta is the headdress Marathi men wear. It is a 'topi', or a head
+                            cover usually made up of cotton. Pehta, also known as pagris are small hats that are made to
+                            cover the heads so as to protect them from the direct sun rays falling on their heads.
+                            Travellers and people working outside, under the sun especially wear this. By preventing the
+                            direct sun rays, the individual does not feel drained or tired too quickly or easily.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+
+                        <h3 class="mb-3"><strong>Bandi</strong></h3>
+                        <p class="text-muted mb-0">The Maharashtrian men occasionally wear waistcoat called Bandi. Bandi
+                            is a sleeveless jacket or coat. They are worn above their shirts. Bandi made the
+                            Maharashtrian attire look more formal and proper. Bandis are more pragmatic keeping in mind
+                            the climate of Maharashtra which did not allow men to wear normal coats or overcoats due to
+                            the excessive warmth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div id="special_img_1"></div>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Women's Attire</h2>
+                    <hr class="my-4">
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <h3 class="mb-3"><strong>Sarees</strong></h3>
+                        <p class="text-muted mb-0">Women wear sarees that are 9 yards long. The saree is tucked in the
+                            middle giving it a similar look to the dhoti. The rest of the saree is wrapped around the
+                            upper body of the women. This type of saree is usually called Lugade. There were many
+                            variations in how women wear their saree. Some only wear knee length sarees. Some wear it in
+                            a skirt manner without the tuck in the middle. But the 9-yard saree is the traditional
+                            costume of women in Maharashtra.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <h3 class="mb-3"><strong>Choli</strong></h3>
+                        <p class="text-muted mb-0">The Maharashtrian women wear choli or blouse underneath the saree. It
+                            is the 'top' or shirt that they wear to cover their upper body. The choli covers half of the
+                            torso. the blouses are short, or half sleeved that have hooks in the front making it easier
+                            for the women to wear them. Similar to men's clothing, women's clothing is also made up of
+                            cotton and sometimes of silk. The commonly found colours in Maharashtrian sarees are green
+                            and red and sometimes even Kesari (yellow) colour.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+
+                        <h3 class="mb-3"><strong>Jewellery</strong></h3>
+                        <p class="text-muted mb-0">Women wear nath i.e. a nose piercing. Naths can be simple loops or
+                            loops connected with the earring on any one side. They are normally made up of gold. Women
+                            are also found wearing other gold jewellery like earrings and necklace (haar) with different
+                            coloured stones.Married women wear mangal sutra and also green bangles. The bride wears
+                            green bangles as they are said to bring prosperity to the relationship and family. Some
+                            women even wear toe rings on their second toe of both of their feet (as the second toe is
+                            said to have a nerve that is connected to the uterus and elements from the ring are said to
+                            make the uterus strong).
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

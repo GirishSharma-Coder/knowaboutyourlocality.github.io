@@ -1,0 +1,579 @@
+/*!
+ * Start Bootstrap - Creative v5.0.1 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+
+#top {
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  /* opacity: 0.5; */
+  display: none;
+  cursor: pointer;
+}
+
+#top:hover {
+  opacity: 1;
+}
+
+.mb-5{
+  width: auto;
+  height: auto;
+  padding: 40px;
+  background-color: #FFA900;
+  border: 2px solid #ffa900;
+  opacity: 0.7;
+  padding: 10px;
+  border-radius: 25px;
+  transition: opacity 0.3s;
+
+}
+
+.mb-5:hover{
+  opacity: 0.9;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.mb-6{
+  width: auto;
+  height: auto;
+  padding: 40px;
+  background-color: #ce9334;
+  opacity: 0.7;
+  border: 2px solid #ce9334;
+  padding: 10px;
+  border-radius: 25px;
+  transition: opacity 0.3s;
+
+}
+
+.mb-6:hover{
+  opacity: 0.9;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.mb-sub{
+  width: auto;
+  height: auto;
+  padding: 40px;
+  background-color: #ebcd90;
+  opacity: 0.8;
+  border: 2px solid #ebcd90;
+  padding: 10px;
+  border-radius: 25px;
+  transition: opacity 0.3s;
+  transition: background  0.3s;
+  transition: border 0.3s;
+}
+
+.mb-sub:hover{
+  opacity: 0.9;
+  background-color: #e6b95e;
+  border: 2px solid #e6b95e;
+}
+
+.borders{
+  border-radius: 25px;
+  transition: opacity 0.3s;
+}
+
+.mb-f{
+  width: auto;
+  height: auto;
+  padding: 40px;
+  background-color: #63b5e8;
+  border: 2px solid #63b5e8;
+  opacity: 0.7;
+  padding: 10px;
+  border-radius: 25px;
+  transition: opacity 0.3s;
+
+}
+
+.mb-f:hover{
+  opacity: 0.9;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+ #food_img_1{
+  background-image: url("https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Smitha-Kalluraya/GOLYACHI_AMTI.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 80% 700px;
+
+}
+
+.difference{
+  border-radius: 25px;
+  transition: transform .2s;
+  background-color: #ebcd90;
+  border: 2px solid #ebcd90;
+  padding: 20px; 
+  width: auto;
+  height: auto;  
+  transform: scale(1);
+}
+
+.differece:hover{
+  transform: scale(1.5);
+}
+
+
+#food_img_2 {
+  background-image: url("https://thefoodxp.com/wp-content/uploads/2020/05/Vada-Pav-scaled.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 80% 68%;
+}
+
+#food_img_3 {
+  background-image: url("https://www.yumcurry.com/wp-content/uploads/2018/02/sabudana-khichdi-recipe.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 80% 68%;
+}
+
+#food_img_4 {
+  background-image: url("https://www.india.com/wp-content/uploads/2018/08/mango-milkshake-665x442.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 80% 68%;
+}
+
+button{
+  background: #1f1b29;
+  color: #F05F40;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  margin:auto;
+}
+
+button:hover{
+  border-color: #ffa28e;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #ffa28e;
+  transform: translateY(-0.25em);
+  transition: border 0.1s, border-color 0.1s, box-shadow 0.1s, transform 0.1s;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #F05F40;
+}
+
+hr.light {
+  border-color: #fff;
+}
+
+a {
+  color: #F05F40;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: #f05f40;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.bg-primary {
+  background-color: #F05F40 !important;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+section {
+  padding: 8rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+
+#header-about-us{
+  background-image: url("../img/about_us_main.jpg");
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-size: cover;
+  text-shadow: 2px 2px 0 #000;
+}
+
+#header-folktale{
+  background-image: url("https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/09/07/Pictures/assignment-name-in-brief_5a4b0fc0-d150-11e9-a264-bc92e50e5c68.JPG");
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#food_head{
+  background-image: url("../img/food_main.jpg");
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+#attire_head{
+  background-image: url("https://ml623zricmci.i.optimole.com/EOa_lXs-6YL12tfv/w:800/h:500/q:85/https://www.luxurytrailsofindia.com/wp-content/uploads/2016/09/Traditional-Dress-of-Maharashtra.jpg");
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+#difference_head{
+  background-image: url("https://d27p8o2qkwv41j.cloudfront.net/wp-content/uploads/2017/11/shutterstock_530001949-e1510592100822.jpg");
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#festive_head{
+  background-image: url("https://images.indianexpress.com/2017/08/pune2.jpg");
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+#feedback_head{
+  background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_176849253_63432.jpg");
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: rgb(255, 255, 255);
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(4, 4, 4);
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #f05f40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212529;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #F05F40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #F05F40 !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #F05F40;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: rgb(0, 0, 0);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #F05F40;
+  }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: rgb(255, 255, 255);
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #F05F40;
+  }
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #f05f40;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #F05F40;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #212529;
+  }
+}
+
+#special_text{
+  color:rgb(30, 255, 251);
+  text-decoration: solid underline rgb(255, 255, 255) ;
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  background-size: cover;
+  text-shadow: 2px 2px 0 black;
+  
+}
+
+
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+header.masthead p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+.service-box {
+  max-width: 400px;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#special-centre{
+  margin:auto;
+}
+
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(240, 95, 64, 0.9);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.portfolio-box:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+.text-primary {
+  color: #F05F40 !important;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #F05F40;
+  border-color: #F05F40;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.bg-primary1 {
+  background-color: #ffa28e !important;
+}
+
+.img-machine {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .bg-primary1{
+    background-color: #fff !important;
+  }
+}
+
+/* 
+nav:hover{
+  color: black;
+  background-color: white;
+} */
